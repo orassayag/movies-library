@@ -1,0 +1,21 @@
+.card-header {
+    cursor: pointer;
+    background-color: #ffaf00;
+    line-height: 300%;
+    padding-left: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    padding-right: 10px;
+
+    .accordion-toggle {
+        &:after {
+            font-family: 'FontAwesome';
+            content: "\f077";
+            float: right;
+        }
+
+        &.collapsed:after {
+            content: "\f078";
+        }
+    }
+}

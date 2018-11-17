@@ -1,0 +1,46 @@
+<div class="container">
+    <h1>Welcome to the Movies Library</h1>
+    <div class="quote italic">
+        "The path of the righteous man is beset on all sides by
+        the inequities of the selfish and the tyranny of evil men.
+        Blessed is he who, in the name of charity and good will,
+        shepherds the weak through the valley of the darkness, for
+        he is truly his brother's keeper and the finder of lost children. And I
+        will strike down upon thee with great vengeance and furious anger those
+        who attempt to poison and destroy My brothers. And you will know I am the
+        Lord when I lay My vengeance upon you." -Jules, Pulp fiction.
+    </div>
+    <h2>Coming soon</h2>
+    <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card" ng-repeat="movie in $ctrl.movies">
+            <div class="card-header text-white" role="tab" id="heading-{{movie.id}}">
+                <div role="button" data-toggle="collapse" class="collapsed accordion-toggle" data-parent="#accordion" href="#collapse-{{movie.id}}" aria-expanded="{$index === 0}" aria-controls="collapse-{{movie.id}}">
+                    {{movie.title}}
+                </div>
+            </div>
+            <div id="collapse-{{movie.id}}" ng-class="{'collapse show': $index === 0, 'collapse': $index > 0}" role="tabpanel" aria-labelledby="heading-{{movie.id}}">
+                <div class="card-body home-movies">
+                    <div class="row">
+                        <div class="col-sm image">
+                            {{movie.title}}
+                            <div class="image-container">
+                                <img src="{{movie.posterurl}}" alt="{{movie.title}}" title="{{movie.title}}"  />
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="p5">
+                                Year: {{movie.year}}
+                            </div>
+                            <div class="item">
+                                {{movie.storyline}}
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            Rating: <i class="fa fa-star" aria-hidden="true" ng-repeat="i in $ctrl.moviesUtils.getRatingNumber(movie.imdbRating) track by $index"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

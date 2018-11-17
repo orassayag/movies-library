@@ -1,0 +1,87 @@
+<div class="container" ng-show="$ctrl.movie !== null">
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-img">
+                        <img src="{{$ctrl.movie.posterurl}}" alt="{{$ctrl.movie.title}}" title="{{$ctrl.movie.title}}" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-head">
+                        <h5>
+                            {{$ctrl.movie.title}}
+                        </h5>
+                        <div class="genre">
+                            Genre: {{$ctrl.movie.genres.join(', ')}}
+                        </div>
+                        <div class="rating">
+                            Rating: <i class="fa fa-star" aria-hidden="true" ng-repeat="i in $ctrl.moviesUtils.getRatingNumber($ctrl.movie.imdbRating) track by $index"></i>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Extra Details</a>
+                            </li>
+                        </ul>
+                        <div class="col-md-12">
+                            <div class="tab-content profile-tab" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>Year: {{$ctrl.movie.year}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>{{$ctrl.movie.storyline}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>With: {{$ctrl.movie.actors.join(', ')}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>Original title: {{$ctrl.movie.originalTitle}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>Release date: {{$ctrl.movie.releaseDate}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>Content rating: {{$ctrl.movie.contentRating}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>Average rating: {{$ctrl.movie.averageRating}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>Duration: {{$ctrl.movie.duration}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <p>Poster file: {{$ctrl.movie.poster.substring(0, 20)}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

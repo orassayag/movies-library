@@ -1,0 +1,21 @@
+// For loading font-awesome icons
+$fa-font-path: '~font-awesome/fonts/';
+
+@import '~font-awesome/scss/font-awesome';
+
+// Loading custom setup of variables.
+@import 'vars/typography';
+@import 'vars/body';
+
+// Loading bootstrap styles.
+@import '~bootstrap/scss/bootstrap';
+
+// Loading blocks.
+@import 'blocks/body';
+
+// Loading elements.
+@import 'elements/accordian-toggle';
+@import 'elements/header';
+@import 'elements/home';
+@import 'elements/movie';
+@import 'elements/movies';

@@ -1,0 +1,36 @@
+.emp-profile {
+    margin-top: 20px;
+
+    .genre {
+        margin-top: 10px;
+    }
+
+    .rating {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .fa-star::before {
+            color: #ffbc00
+        }
+    }
+
+    .profile-img {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .profile-head {
+        h5 {
+            margin-top: 10px;
+        }
+    }
+
+    .tab-content {
+        margin-top: 10px;
+
+        .col-md-6 {
+            padding-left: 5px;
+        }
+    }
+}

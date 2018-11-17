@@ -1,0 +1,35 @@
+.quote {
+    margin-bottom: 10px;
+}
+
+.home-movies {
+    .row {
+        margin-top: 10px;
+        .col-sm {
+            &.image {
+                width: 100%;
+                text-align: center;
+            }
+
+            .image-container {
+                margin-top: 10px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            &.p5 {
+                margin-top: p5
+            }
+
+            .item {
+                margin-top: 10px;
+            }
+
+            .fa-star::before {
+                color: #ffbc00
+            }
+        }
+    }
+}
