@@ -17,41 +17,41 @@ const config = {
     },
     module: {
         rules: [{
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: ['ng-annotate-loader', 'babel-loader']
-            },
-            {
-                test: /\.(scss)$/,
-                use: ExtractTextWebpackPlugin.extract({
-                    use: [{
-                            loader: 'css-loader',
-                            options: {
-                                minimize: true
-                            }
-                        },
-                        {
-                            loader: 'sass-loader'
-                        }
-                    ]
-                })
-            },
-            // for fixing of loading bootstrap icon files
-            {
-                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
-                loader: 'url-loader?limit=10000',
-                options: {
-                    name: './fonts/[name].[ext]'
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: ['ng-annotate-loader', 'babel-loader']
+        },
+        {
+            test: /\.(scss)$/,
+            use: ExtractTextWebpackPlugin.extract({
+                use: [{
+                    loader: 'css-loader',
+                    options: {
+                        minimize: true
+                    }
+                },
+                {
+                    loader: 'sass-loader'
                 }
-            },
-            {
-                test: /\.(eot|ttf)$/,
-                loader: 'file-loader',
-                options: {
-                    name: './fonts/[name].[ext]'
-                }
-            },
-            { test: /\.html$/, loader: 'html-loader' }
+                ]
+            })
+        },
+        // for fixing of loading bootstrap icon files
+        {
+            test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+            loader: 'url-loader?limit=10000',
+            options: {
+                name: './fonts/[name].[ext]'
+            }
+        },
+        {
+            test: /\.(eot|ttf)$/,
+            loader: 'file-loader',
+            options: {
+                name: './fonts/[name].[ext]'
+            }
+        },
+        { test: /\.html$/, loader: 'html-loader' }
         ]
     },
     plugins: [
