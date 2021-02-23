@@ -1,4 +1,4 @@
-# Server
+# Movies Library
 
 Built in November 2018. Angular 1.6 + Webpack + ES6 + Bootstrap 4 - A simple movie library project.
 
