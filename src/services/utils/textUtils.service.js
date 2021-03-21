@@ -1,4 +1,4 @@
-// This function return random number.
+// This function returns a random number.
 const getRandomNumber = (maxNumber) => {
     if (!maxNumber || isNaN(maxNumber)) {
         return 0;
@@ -8,7 +8,7 @@ const getRandomNumber = (maxNumber) => {
     return Math.floor(Math.random() * (maxNumber - 1 + 1)) + 1;
 };
 
-// This function return random numbers.
+// This function returns random numbers.
 export const getRandomNumbers = (data) => {
     if (!data || !data.numbersCount || isNaN(data.numbersCount)) {
         return 0;
