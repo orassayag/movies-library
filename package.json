@@ -1,7 +1,12 @@
 {
     "name": "movies-library",
     "version": "2.0.0",
+    "private": false,
     "description": "",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/orassayag/movies-library.git"
+    },
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --progress --open",
