@@ -7,8 +7,8 @@ Built in November 2018. A simple movie library project built using Angular.js 1.
 Clone the project to your computer.
 Steps to view the solution:
 1. Open server project on IDE (I used VSCode).
-2. In the terminal: npm start.
-Happy testing! :)
+2. In the terminal run: 'npm start'.
+Happy testing! :).
 
 ### Prerequisites
 
@@ -24,7 +24,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Author
 
@@ -36,4 +36,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This application has an UNLICENSED License.
+This application has an UNLICENSED license.
