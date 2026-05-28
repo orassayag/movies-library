@@ -1,16 +1,17 @@
-export default [{
+export default [
+  {
     name: 'home',
     url: '/',
-    component: 'home'
-},
-{
+    component: 'home',
+  },
+  {
     name: 'movie',
     url: '/movie',
-    component: 'movie'
-},
-{
+    component: 'movie',
+  },
+  {
     name: 'movies',
     url: '/movies',
-    component: 'movies'
-}
+    component: 'movies',
+  },
 ];

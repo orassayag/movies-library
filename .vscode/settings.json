@@ -1,13 +1,12 @@
 {
-    "cSpell.words": [
-        "Assayag",
-        "Calibri",
-        "imdb",
-        "orassayag",
-        "sref"
-    ],
-    "cSpell.ignorePaths": [
-        "src/data/**",
-        "package-lock.json"
-    ],
+  "cSpell.words": [
+    "angularjs",
+    "Assayag",
+    "Batarang",
+    "Calibri",
+    "imdb",
+    "orassayag",
+    "sref"
+  ],
+  "cSpell.ignorePaths": ["src/data/**", "package-lock.json"]
 }

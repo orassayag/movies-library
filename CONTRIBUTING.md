@@ -9,6 +9,7 @@ Everyone is welcome to contribute to this project. Contributing doesn't just mea
 ### Reporting Issues
 
 If you find a bug or have a feature request:
+
 1. Check if the issue already exists in the [GitHub Issues](https://github.com/orassayag/movies-library/issues)
 2. If not, create a new issue with:
    - Clear title and description
@@ -31,6 +32,7 @@ If you find a bug or have a feature request:
 ### Code Style Guidelines
 
 This project uses:
+
 - **AngularJS 1.6** component architecture
 - **ES6** syntax with Babel transpilation
 - **Webpack** for module bundling
@@ -38,6 +40,7 @@ This project uses:
 - **Bootstrap 4** for UI components
 
 Before submitting:
+
 ```bash
 # Install dependencies
 npm install
@@ -61,6 +64,7 @@ npm run build
 ### Adding New Features
 
 When adding new features:
+
 1. Create appropriate component structure in `src/components/`
 2. Add service logic in `src/services/` if needed
 3. Register components in `src/app.components.js`
@@ -80,9 +84,9 @@ When adding new features:
 
 Please feel free to contact me with any question, comment, pull-request, issue, or any other thing you have in mind.
 
-* Or Assayag <orassayag@gmail.com>
-* GitHub: https://github.com/orassayag
-* StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
-* LinkedIn: https://linkedin.com/in/orassayag
+- Or Assayag <orassayag@gmail.com>
+- GitHub: https://github.com/orassayag
+- StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
+- LinkedIn: https://linkedin.com/in/orassayag
 
 Thank you for contributing! 🙏

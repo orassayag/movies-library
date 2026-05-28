@@ -1,63 +1,102 @@
 {
-    "name": "movies-library",
-    "version": "2.0.0",
-    "private": false,
-    "description": "A single-page web application that displays a comprehensive movie library with detailed information about films, built with AngularJS 1.6, Webpack, ES6, and Bootstrap 4",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/orassayag/movies-library.git"
-    },
-    "main": "index.js",
-    "scripts": {
-        "start": "webpack-dev-server --progress --open",
-        "build": "webpack --progress",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "movies",
-        "library",
-        "angularjs",
-        "webpack",
-        "es6",
-        "bootstrap",
-        "spa",
-        "single-page-application",
-        "movie-database",
-        "movie-app",
-        "angular",
-        "bootstrap4",
-        "sass",
-        "ui-router"
-    ],
-    "author": "Or Assayag",
-    "license": "MIT",
-    "devDependencies": {
-        "babel-core": "^6.25.0",
-        "babel-loader": "^7.1.1",
-        "babel-plugin-transform-class-properties": "^6.24.1",
-        "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
-        "babel-preset-es2015": "^6.24.1",
-        "clean-webpack-plugin": "^0.1.16",
-        "css-loader": "^0.28.4",
-        "extract-text-webpack-plugin": "^3.0.0",
-        "file-loader": "^0.11.2",
-        "html-loader": "^0.5.0",
-        "html-webpack-plugin": "^2.30.1",
-        "ng-annotate-loader": "^0.6.1",
-        "node-sass": "^4.5.3",
-        "optimize-css-assets-webpack-plugin": "^3.0.0",
-        "sass-loader": "^6.0.6",
-        "style-loader": "^0.18.2",
-        "url-loader": "^0.5.9",
-        "webpack": "^3.2.0",
-        "webpack-dev-server": "^2.5.1"
-    },
-    "dependencies": {
-        "angular": "^1.6.5",
-        "angular-ui-router": "^1.0.3",
-        "bootstrap": "^4.1.1",
-        "font-awesome": "4.7.0",
-        "jquery": "^3.2.1",
-        "popper.js": "^1.14.3"
+  "name": "movies-library",
+  "version": "2.0.0",
+  "private": false,
+  "description": "A single-page web application that displays a comprehensive movie library with detailed information about films, built with AngularJS 1.6, Webpack, ES6, and Bootstrap 4.. This application fetches movie data from external sources, processes it, and presents it in an intuitive, responsive interface",
+  "keywords": [
+    "movies",
+    "library",
+    "angularjs",
+    "webpack",
+    "es6",
+    "bootstrap",
+    "spa",
+    "single-page-application",
+    "movie-database",
+    "movie-app",
+    "angular",
+    "bootstrap4",
+    "sass",
+    "ui-router"
+  ],
+  "homepage": "https://github.com/orassayag/movies-library#readme",
+  "bugs": {
+    "url": "https://github.com/orassayag/movies-library/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/movies-library.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/orassayag"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Or Assayag",
+    "email": "orassayag@gmail.com",
+    "url": "https://github.com/orassayag"
+  },
+  "contributors": [
+    {
+      "name": "Or Assayag",
+      "email": "orassayag@gmail.com",
+      "url": "https://github.com/orassayag"
     }
+  ],
+  "type": "commonjs",
+  "main": "src/vendor.module.js",
+  "files": [
+    ".github",
+    ".vscode",
+    "src",
+    ".babelrc",
+    ".eslintrc",
+    ".gitignore",
+    ".prettierrc",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "INSTRUCTIONS.md",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "README.md",
+    "SECURITY.md",
+    "webpack.config.js"
+  ],
+  "scripts": {
+    "build": "webpack --progress",
+    "start": "webpack-dev-server --progress --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-ui-router": "^1.0.3",
+    "bootstrap": "^4.1.1",
+    "font-awesome": "4.7.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.0",
+    "html-webpack-plugin": "^2.30.1",
+    "ng-annotate-loader": "^0.6.1",
+    "node-sass": "^4.5.3",
+    "optimize-css-assets-webpack-plugin": "^3.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
+  }
 }
